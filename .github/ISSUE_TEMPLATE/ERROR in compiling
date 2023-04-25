@@ -1,0 +1,11 @@
+Here is the ERRORs in compiling:
+[ 39%] Linking CXX shared module ../../lib/orcaformat.so
+/usr/bin/ld: CMakeFiles/orcaformat.dir/orcaformat.cpp.o: in function `OpenBabel::OrcaOutputFormat::checkColumns(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+orcaformat.cpp:(.text+0xcbf): undefined reference to `regcompA'
+/usr/bin/ld: orcaformat.cpp:(.text+0xd4a): undefined reference to `regexecA'
+collect2: error: ld returned 1 exit status
+make[2]: *** [src/formats/CMakeFiles/orcaformat.dir/build.make:95: lib/orcaformat.so] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1818: src/formats/CMakeFiles/orcaformat.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
+
+Please do me a favor. How to solve this problem?
